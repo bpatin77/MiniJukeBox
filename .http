@@ -1,0 +1,17 @@
+@host = http://localhost:3000
+
+### Get all restaurants
+GET {{host}}/users
+
+### Get single user with playlists included
+GET {{host}}/users/2
+
+### Make new playlist to user
+POST {{host}}/users/2/playlists
+Content-Type: application/json
+
+{
+  "name": "Hungry Guest",
+  "description": "super.duper@hungry.com",
+  "ownerId":6
+}
